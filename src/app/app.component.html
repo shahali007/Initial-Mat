@@ -1,8 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
+    <h1>
+        Welcome to {{ title }}!
+    </h1>
     <br>
     <br>
     <br>
@@ -10,12 +10,15 @@
     <hr>
 
     <button mat-button class="mat-primary">Mat Button</button>
-    <button mat-raised-button class="mat-primary">Mat Raised Button</button>
-    <button mat-flat-button class="mat-primary">Mat Flat Button</button>
+    <button mat-raised-button class="mat-warn">Mat Raised Button</button>
+    <button mat-flat-button class="mat-accent">Mat Flat Button</button>
     <button mat-icon-button class="mat-primary">I</button>
     <button mat-stroked-button class="mat-primary">Stroked</button>
-    <button mat-fab class="mat-accent">F</button>
-    <button mat-mini-fab class="mat-primary">MF</button>
+    <button mat-fab color="primary">F</button>
+    <button mat-mini-fab class="mat-primary">MF</button> |
+    <button mat-raised-button class="mat-primary">Primary</button>
+    <button mat-raised-button class="mat-accent">Accent</button>
+    <button mat-raised-button class="mat-warn">Warn</button>
     <hr>
     <mat-button-toggle-group appearance="legacy" name="fontStyle" aria-label="Font Style">
         <mat-button-toggle value="bold">Bold</mat-button-toggle>
@@ -23,10 +26,64 @@
         <mat-button-toggle value="underline">Underline</mat-button-toggle>
     </mat-button-toggle-group>
     <hr>
+    <section class="mat-typography">
+        <h1>Typography</h1>
+    </section>
+    <div class="mat-display-4">mat-display-4</div>
+    <div class="mat-display-3">mat-display-3</div>
+    <div class="mat-display-2">mat-display-2</div>
+    <div class="mat-display-1">mat-display-1</div>
 
+    <h1 class="mat-h1">h1 - .mat-h1</h1>
+    <h1 class="mat-headline">h1 - .mat-headline</h1>
+
+    <h2 class="mat-h2">h2 - .mat-h2</h2>
+    <h2 class="mat-title">h2 - .mat-title</h2>
+
+    <h2 class="mat-h3">h3 - .mat-h3</h2>
+    <h2 class="mat-subheading-2">h3 - .mat-subheading-2</h2>
+
+    <p class="mat-body">p - .mat-body</p>
+    <p class="mat-body-1">p - .mat-body-1</p>
+
+    <p class="mat-body-strong">p - .mat-body-strong</p>
+    <p class="mat-body-2">p - .mat-body-2</p>
+
+    <p class="mat-small">p - .mat-small</p>
+    <p class="mat-caption">p - .mat-caption</p>
+    <hr>
+    <mat-icon>fingerprint</mat-icon>
+    <mat-icon>drag_indicator</mat-icon>
+    <mat-icon>dns</mat-icon>
+    <mat-icon>settings_input_component</mat-icon>
+    <mat-icon>tab_unselected</mat-icon>
+    <mat-icon>verified_user</mat-icon>
+    <mat-icon>mic_none</mat-icon>
+    <mat-icon>slow_motion_video</mat-icon>
+    <mat-icon>chat</mat-icon>
+    <mat-icon>battery_charging_20</mat-icon>
+    <hr>
+    <p>
+        <span matBadge="4" matBadgeOverlap="false">Text with a badge</span>
+    </p>
+
+    <p>
+        Button with a badge on the left
+        <button mat-raised-button color="primary"
+                matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+            Action
+        </button>
+    </p>
+
+    <p>
+        Icon with a badge
+        <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+        <!-- Include text description of the icon's meaning for screen-readers -->
+        <span class="cdk-visually-hidden">
+      Example with a home icon with overlaid badge showing the number 15
+    </span>
+    </p>
 </div>
-
-
 
 
 <router-outlet></router-outlet>
